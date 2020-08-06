@@ -1,4 +1,4 @@
-!define springBase https://raw.githubusercontent.com/rabelenda/cicon-plantuml-sprites/v1.0/sprites
+!define spritesBase https://raw.githubusercontent.com/rabelenda/cicon-plantuml-sprites/v1.0/sprites
 
 ' https://github.com/rabelenda/cicon-plantuml-sprites 使用cicon-plantuml-sprites的sprites
 
@@ -22,7 +22,7 @@ rectangle "==e_label\n<color:e_color><$e_sprite></color>\n//<size:DESC_FONT_SIZE
 
 
 ' mysql
-!includeurl springBase/mysql.puml
+!includeurl spritesBase/mysql.puml
 skinparam rectangle<<mysql>> {
     StereotypeFontColor ELEMENT_FONT_COLOR
     FontColor ELEMENT_FONT_COLOR
@@ -32,7 +32,7 @@ skinparam rectangle<<mysql>> {
 !define ContainerMyDatabaseMysql(e_alias, e_label, a_desc) MyEntity(e_alias, e_label, a_desc, CONTAINER_SPRINT_COLOR, mysql, "Mysql")
 
 ' redis
-!includeurl springBase/redis.puml
+!includeurl spritesBase/redis.puml
 skinparam rectangle<<redis>> {
     StereotypeFontColor ELEMENT_FONT_COLOR
     FontColor ELEMENT_FONT_COLOR
@@ -42,7 +42,7 @@ skinparam rectangle<<redis>> {
 !define ContainerMyDatabaseRedis(e_alias, e_label, a_desc) MyEntity(e_alias, e_label, a_desc, CONTAINER_SPRINT_COLOR, redis, "Redis")
 
 ' rabbitmq
-!includeurl springBase/rabbitmq.puml
+!includeurl spritesBase/rabbitmq.puml
 skinparam rectangle<<rabbitmq>> {
     StereotypeFontColor ELEMENT_FONT_COLOR
     FontColor ELEMENT_FONT_COLOR
@@ -52,7 +52,7 @@ skinparam rectangle<<rabbitmq>> {
 !define ContainerMyDatabaseRabbitmq(e_alias, e_label, a_desc) MyEntity(e_alias, e_label, a_desc, CONTAINER_SPRINT_COLOR, rabbitmq, "Rabbitmq")
 
 ' elasticsearch
-!includeurl springBase/elasticsearch.puml
+!includeurl spritesBase/elasticsearch.puml
 skinparam rectangle<<elasticsearch>> {
     StereotypeFontColor ELEMENT_FONT_COLOR
     FontColor ELEMENT_FONT_COLOR
@@ -63,7 +63,7 @@ skinparam rectangle<<elasticsearch>> {
 
 
 ' mongodb
-!includeurl springBase/mongodb.puml
+!includeurl spritesBase/mongodb.puml
 skinparam rectangle<<mongodb>> {
     StereotypeFontColor ELEMENT_FONT_COLOR
     FontColor ELEMENT_FONT_COLOR
@@ -73,7 +73,7 @@ skinparam rectangle<<mongodb>> {
 !define ContainerMyDatabasMongoDb(e_alias, e_label, a_desc) MyEntity(e_alias, e_label, a_desc, CONTAINER_SPRINT_COLOR, mongodb, "Mongodb")
 
 ' file
-!includeurl springBase/file.puml
+!includeurl spritesBase/file.puml
 skinparam rectangle<<file>> {
     StereotypeFontColor ELEMENT_FONT_COLOR
     FontColor ELEMENT_FONT_COLOR
@@ -84,7 +84,7 @@ skinparam rectangle<<file>> {
 
 
 ' php
-!includeurl springBase/php.puml
+!includeurl spritesBase/php.puml
 skinparam rectangle<<php>> {
     StereotypeFontColor ELEMENT_FONT_COLOR
     FontColor ELEMENT_FONT_COLOR

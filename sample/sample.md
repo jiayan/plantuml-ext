@@ -1,9 +1,11 @@
 # sample
 
+样例
 
 ```plantuml
 @startuml
-!define springBase https://raw.githubusercontent.com/rabelenda/cicon-plantuml-sprites/v1.0/sprites
+
+!includeurl https://raw.githubusercontent.com/jiayan/plantuml-ext/master/dist/c4-container.puml
 
 
 ContainerMyDatabaseMysql(a1,"123","abc")
