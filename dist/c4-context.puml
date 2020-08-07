@@ -1,30 +1,8 @@
-# sample
-
-样例
-
-```plantuml
-@startuml
-!include ../dist/c4-container.puml
 !include ../dist/spirites/all.puml
-
-
-ContainerMyDatabaseMysql(a1,"123","abc")
-
-ContainerMyDatabaseRedis(a2,"123","abc")
-
-ContainerMyDatabaseRabbitmq(r,"123","abc")
-
-ContainerMyDatabasElasticSearch(e,"123","abc")
-
-ContainerMyDatabasFile(f,"123","abc")
-
-ContainerMyDatabasMongoDb(m,"123","abc")
-
-ContainerMyDatabasPhp(p,"123","abc")
 
 ' global
 
-!define EXT_CONTEXT_BG_COLOR #1168BD
+!define EXT_CONTEXT_BG_COLOR #000000
 !define EXTERNAL_EXT_CONTEXT_BG_COLOR #999999
 
 !define ELEMENT_FONT_COLOR #FFFFFF
@@ -43,8 +21,8 @@ rectangle "==e_label\n<color:e_color><$e_sprite></color>\n//<size:DESC_FONT_SIZE
 !define ENTITY_SPRINT_COLOR #FFFFFF
 
 
-'  entity-warehouse
-skinparam rectangle<<仓库>> {
+'  entity-warehouseß
+skinparam rectangle<<warehouse>> {
     StereotypeFontColor ELEMENT_FONT_COLOR
     FontColor ELEMENT_FONT_COLOR
     BackgroundColor EXT_CONTEXT_BG_COLOR
@@ -55,16 +33,9 @@ skinparam rectangle<<仓库>> {
 skinparam rectangle<<php2>> {
     StereotypeFontColor ELEMENT_FONT_COLOR
     FontColor ELEMENT_FONT_COLOR
-    BackgroundColor EXT_CONTEXT_BG_COLOR
-    BorderColor EXT_BORDER_COLOR
+    BackgroundColor CONTAINER_BG_COLOR
+    BorderColor MY_BORDER_COLOR
 }
-!define EntityWarehouse(e_alias, e_label, a_desc) MyEntity2(e_alias, e_label, a_desc, ENTITY_SPRINT_COLOR, warehouse, "warehouse")
+!define EntityWarehouse(e_alias, e_label, a_desc) MyEntity2(e_alias, e_label, a_desc, CONTAINER_SPRINT_COLOR, php, "Php2")
 
-
-
-
-EntityWarehouse(w1,"ab","abc")
-
-@enduml
-```
 
