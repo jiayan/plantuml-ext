@@ -22,21 +22,12 @@ rectangle "==e_label\n<color:e_color><$e_sprite></color>\n//<size:DESC_FONT_SIZE
 !define ENTITY_SPRINT_COLOR #FFFFFF
 
 
-'  entity-warehouseß
-skinparam rectangle<<warehouse>> {
+'  entity-warehouse
+skinparam rectangle<<仓库>> {
     StereotypeFontColor ELEMENT_FONT_COLOR
     FontColor ELEMENT_FONT_COLOR
     BackgroundColor EXT_CONTEXT_BG_COLOR
     BorderColor EXT_BORDER_COLOR
 }
-' !define EntityWarehouse(e_alias, e_label, a_desc) MyEntity2(e_alias, e_label, a_desc, ENTITY_SPRINT_COLOR, redis, "仓库")
-
-skinparam rectangle<<php2>> {
-    StereotypeFontColor ELEMENT_FONT_COLOR
-    FontColor ELEMENT_FONT_COLOR
-    BackgroundColor CONTAINER_BG_COLOR
-    BorderColor MY_BORDER_COLOR
-}
-!define EntityWarehouse(e_alias, e_label, a_desc) MyEntity2(e_alias, e_label, a_desc, CONTAINER_SPRINT_COLOR, php, "Php2")
-
+!define EntityWarehouse(e_alias, e_label, a_desc) MyEntity2(e_alias, e_label, a_desc, ENTITY_SPRINT_COLOR, warehouse, "仓库")
 

@@ -22,47 +22,6 @@ ContainerMyDatabasMongoDb(m,"123","abc")
 
 ContainerMyDatabasPhp(p,"123","abc")
 
-' global
-
-!define EXT_CONTEXT_BG_COLOR #1168BD
-!define EXTERNAL_EXT_CONTEXT_BG_COLOR #999999
-
-!define ELEMENT_FONT_COLOR #FFFFFF
-!define DESC_FONT_SIZE 12
-
-skinparam defaultTextAlignment center
-skinparam wrapWidth 200
-skinparam maxMessageSize 150
-!define  EXT_BORDER_COLOR  #3C7FC0 
-
-
-!definelong MyEntity2(e_alias, e_label, a_desc, e_color, e_sprite, e_stereo)
-rectangle "==e_label\n<color:e_color><$e_sprite></color>\n//<size:DESC_FONT_SIZE>a_desc</size>//" <<e_stereo>> as e_alias
-!enddefinelong
-
-!define ENTITY_SPRINT_COLOR #FFFFFF
-
-
-'  entity-warehouse
-skinparam rectangle<<仓库>> {
-    StereotypeFontColor ELEMENT_FONT_COLOR
-    FontColor ELEMENT_FONT_COLOR
-    BackgroundColor EXT_CONTEXT_BG_COLOR
-    BorderColor EXT_BORDER_COLOR
-}
-' !define EntityWarehouse(e_alias, e_label, a_desc) MyEntity2(e_alias, e_label, a_desc, ENTITY_SPRINT_COLOR, redis, "仓库")
-
-skinparam rectangle<<php2>> {
-    StereotypeFontColor ELEMENT_FONT_COLOR
-    FontColor ELEMENT_FONT_COLOR
-    BackgroundColor EXT_CONTEXT_BG_COLOR
-    BorderColor EXT_BORDER_COLOR
-}
-!define EntityWarehouse(e_alias, e_label, a_desc) MyEntity2(e_alias, e_label, a_desc, ENTITY_SPRINT_COLOR, warehouse, "warehouse")
-
-
-
-
 EntityWarehouse(w1,"ab","abc")
 
 @enduml
